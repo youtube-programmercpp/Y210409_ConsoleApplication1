@@ -139,11 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Y210409_Expression.cpp" />
     <ClCompile Include="Y210409_main.cpp" />
+    <ClCompile Include="Y210409_Parser.cpp" />
     <ClCompile Include="Y210409_Token.cpp" />
     <ClCompile Include="Y210409_Tokenizer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Y210409_Expression.h" />
+    <ClInclude Include="Y210409_Parser.h" />
     <ClInclude Include="Y210409_Token.h" />
     <ClInclude Include="Y210409_Tokenizer.h" />
   </ItemGroup>

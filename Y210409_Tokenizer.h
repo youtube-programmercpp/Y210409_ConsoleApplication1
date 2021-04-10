@@ -1,7 +1,7 @@
+// Y210409_Tokenizer.h Copyright(C) 2021 http://youtube.com/programmercpp
 #pragma once
 #include <string>
 #include <istream>
-#include <ostream>
 
 class Token;
 

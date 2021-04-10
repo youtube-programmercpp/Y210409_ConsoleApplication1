@@ -1,7 +1,9 @@
+// Y210409_main.cpp Copyright(C) 2021 http://youtube.com/programmercpp
 #include <iostream>
-#include <string>
-#include <stdexcept>
+#include <sstream>
+#include <exception>
 
+#if 0
 #include "Y210409_Token.h"
 #include "Y210409_Tokenizer.h"
 int main()
@@ -20,3 +22,17 @@ int main()
 		std::cerr << e.what() << '\n';
 	}
 }
+#else
+#include "Y210409_Parser.h"
+void test(std::istream&& istm)
+{
+	std::cout << Parser(istm).ParseExpression(istm)->Evaluate() << '\n';
+}
+int main()
+{
+	std::string s;
+	while (std::getline(std::cin, s)) {
+		test(std::istringstream(s));
+	}
+}
+#endif
