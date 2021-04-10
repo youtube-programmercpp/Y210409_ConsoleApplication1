@@ -1,3 +1,4 @@
+// Y210409_Token.h Copyright(C) 2021 http://youtube.com/programmercpp
 #pragma once
 #include <string>
 #include <istream>

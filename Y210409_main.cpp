@@ -1,3 +1,4 @@
+// Y210409_main.cpp Copyright(C) 2021 http://youtube.com/programmercpp
 #include <iostream>
 #include <string>
 #include <stdexcept>
