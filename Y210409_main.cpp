@@ -30,9 +30,14 @@ void test(std::istream&& istm)
 }
 int main()
 {
-	std::string s;
-	while (std::getline(std::cin, s)) {
-		test(std::istringstream(s));
+	try {
+		std::string s;
+		while (std::getline(std::cin, s)) {
+			test(std::istringstream(s));
+		}
+	}
+	catch (const std::exception& e) {
+		std::cerr << e.what() << '\n';
 	}
 }
 #endif
